@@ -52,7 +52,7 @@ def load_data(parquet_file_path):
                 'mean': df_cleaned[column].mean(),
                 'median': df_cleaned[column].median(),
                 'std': df_cleaned[column].std(),
-                'is_normal_distribution': p_value < 0.05,
+                'is_normal_distribution': p_value > 0.05,
                 'p_value': p_value,
                 'missing_original': df[column].isna().sum(),
                 'missing_after_cleaning': df_cleaned[column].isna().sum()
