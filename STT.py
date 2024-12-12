@@ -76,10 +76,10 @@ def load_data(parquet_file_path):
         print(f"Error loading data: {e}")
         raise
 
-# Step 2: Filter for Lansing city and winter season, then create target variable
+# Step 2: Filter for Winter season, then create target variable
 @statistical_logger
 def preprocess_data(df):
-    # Filter for Lansing and winter season
+    # Filter for Winter season
     df = df[df['season'].str.lower() == 'winter'].copy()
     
     print(f"Filtered DataFrame shape: {df.shape}")
