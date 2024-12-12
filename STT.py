@@ -87,7 +87,7 @@ def preprocess_data(df):
     # Create target variable: 1 if snow_depth_mm > 0, else 0
     df['snow'] = df['snow_depth_mm'].apply(lambda x: 1 if x > 0 else 0)
     
-    # Drop original snow_depth_mm and irrelevant columns (do NOT drop precipitation_mm)
+    # Drop original snow_depth_mm and irrelevant columns
     df = df.drop(['city_name', 'date', 'snow_depth_mm', 'season', 'station_id'], axis=1)
     
     # Remove rows with any missing values
