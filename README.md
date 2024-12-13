@@ -21,7 +21,7 @@ To run this project, you need the following Python libraries:
 - `scipy`
 ---
 ## Dataset Overview
-We make use of the this dataset - https://www.kaggle.com/datasets/guillemservera/global-daily-climate-data. The dataset is provided in Parquet format (`daily_weather.parquet`) and contains daily weather observations. Key features include:
+We make use of the this dataset - https://drive.google.com/file/d/1z5pfD2vkX7N6JoVUCyytq_utVs85GlI-/view?usp=sharing. The dataset is provided in Parquet format (`daily_weather.parquet`) and contains daily weather observations. Key features include:
 - **`season`**: The season during which the observation was recorded (e.g., "winter").
 - **`snow_depth_mm`**: The depth of snow measured in millimeters.
 - **`city_name`**, **`date`**, and **`station_id`**: Metadata associated with the observations.
